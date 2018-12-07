@@ -39,7 +39,7 @@ public class MessageHandler implements Runnable {
                 e.printStackTrace();
             }
             try {
-                FileOutputStream fout = new FileOutputStream("D:\\info.ser");
+                FileOutputStream fout = new FileOutputStream("src/com/Telgram/Data/info.ser");
                 ObjectOutputStream oos = new ObjectOutputStream(fout);
                 oos.writeObject(users);
             }

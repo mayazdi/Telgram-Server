@@ -44,12 +44,12 @@ public class Main {
 
 
 
-        FileInputStream fout = new FileInputStream("D:\\info.ser");
+        FileInputStream fout = new FileInputStream("src/com/Telgram/Data/info.ser");
         ObjectInputStream oos = new ObjectInputStream(fout);
         users = (HashSet<User>) oos.readObject();
         System.out.println(users.size());
 
-        /*FileOutputStream fout = new FileOutputStream("D:\\info.ser");
+        /*FileOutputStream fout = new FileOutputStream("src/com/Telgram/Data/info.ser");
         ObjectOutputStream oos = new ObjectOutputStream(fout);
         oos.writeObject(users);*/
 
