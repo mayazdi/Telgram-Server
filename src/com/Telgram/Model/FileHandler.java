@@ -14,8 +14,9 @@ public class FileHandler implements Runnable{
              Socket socket = serverSocket.accept();
              ObjectOutputStream outputStream = new ObjectOutputStream(socket.getOutputStream());
              ObjectInputStream inputStream = new ObjectInputStream(socket.getInputStream());) {
-            /*file = (File)inputStream.readObject();
-            File saved = new File("/Data/ProfilePics/"+)*/
+            file = (File)inputStream.readObject();
+            //File saved = new File("/Data/ProfilePics/"+/*username*/);
+            //file.renameTo(saved);
 
         }
         catch (Exception e){

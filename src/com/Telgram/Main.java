@@ -65,6 +65,10 @@ public class Main {
         ScheduledExecutorService executorService3 = Executors.newSingleThreadScheduledExecutor();
         executorService3.execute(onlineHandler);
 
+        FileHandler fileHandler = new FileHandler();
+        ScheduledExecutorService executorService4 = Executors.newSingleThreadScheduledExecutor();
+        executorService4.execute(fileHandler);
+
     }
 
 
